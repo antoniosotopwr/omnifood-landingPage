@@ -6,22 +6,27 @@
 
 - Font Weights
 Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
 
 - Line heights
 Default: 1
+Small: 1.05
+Paragraph default: 1.06
 
 --- 02 COLORS
 
 - Primary: #e67e22
-- Tints
-- Shades: 
+- Tints: #fdf2e9
+- Shades: #cf711f
 - Accents: 
-- Greys: #555
+- Greys: #555, #333
 
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
-
+9px
 --- 07 WHITESPACE
 
 - SPACING SYSTEM (px)
@@ -116,10 +121,12 @@ body {
 .main-nav-list {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 3.2rem;
 }
 .main-nav-link:link,
-.amin-nav-link:visited {
+.main-nav-link:visited {
+  display: inline-block;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -127,9 +134,21 @@ body {
   transition: all 0.3s linear;
 }
 .main-nav-link:hover,
-.amin-nav-link:active {
+.main-nav-link:active {
   color: #a15818;
 }
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  background-color: #e67e22;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
 /* ******************************** */
 /* HERO SECTION */
 /* ******************************** */
