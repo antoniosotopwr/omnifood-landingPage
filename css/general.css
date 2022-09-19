@@ -82,6 +82,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--2-rows {
+  grid-template-rows: repeat(2, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -180,7 +184,7 @@ body {
   margin-bottom: 4.8rem !important;
 }
 
-.center-text{
+.center-text {
   text-align: center;
 }
 
